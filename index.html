@@ -1,0 +1,892 @@
+<html>
+  <head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="utf-8" />
+    <audio
+      src="https://cdn.glitch.com/2def1b45-7be9-4a8d-9070-1fb5ff26ff36%2F1%20Hour%20Highway%20Night%20Driving%20for%20Sleep%2C%20ASMR%2C%20Relaxing%20%232.mp3?v=1627436052373"
+      id="constant"
+      loop
+      muted
+    ></audio>
+    <audio
+      src="https://cdn.glitch.com/2def1b45-7be9-4a8d-9070-1fb5ff26ff36%2Fcar%20acceleration%20sound%20effect%20(1).mp3?v=1627436277778"
+      id="accelerationsfx"
+      loop
+      muted
+    ></audio>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
+    <!-- https://croquet.studio/sdk/docs/index.html -->
+    <script src="https://unpkg.com/@croquet/croquet@0.4.0"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item
+          id="car1"
+          src="https://cdn.glitch.com/2def1b45-7be9-4a8d-9070-1fb5ff26ff36%2FMcLaren.glb?v=1627350977108"
+        ></a-asset-item>
+        
+        <a-asset-item
+          id="city"
+          src="https://cdn.glitch.com/2def1b45-7be9-4a8d-9070-1fb5ff26ff36%2Fscene%20(2).glb?v=1627415396286"
+        ></a-asset-item>
+        <a-asset-item
+          id="city2"
+          src="https://cdn.glitch.com/2def1b45-7be9-4a8d-9070-1fb5ff26ff36%2Fscene%20(5).glb?v=1627457347306"
+        ></a-asset-item>
+        <a-asset-item
+          id="trafficlight"
+          src="https://cdn.glitch.com/2def1b45-7be9-4a8d-9070-1fb5ff26ff36%2Fscene%20(7).glb?v=1627459748818"
+        ></a-asset-item>
+        <a-asset-item
+          id="robinhood"
+          src="https://cdn.glitch.com/2def1b45-7be9-4a8d-9070-1fb5ff26ff36%2Fscene%20(8).glb?v=1627488850675"
+        ></a-asset-item>
+      </a-assets>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight1"
+        position="-103.276 20 -3.145"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight2"
+        position="-109.111 20 -49.004"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight3"
+        position="-193.094 20 -0.477"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight4"
+        position="-85.304 20 129.706"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight5"
+        position="-6.066 20 129.706"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight6"
+        position="50.726 20 122.950"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight7"
+        position="166.131 20 122.950"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight8"
+        position="212.631 20 -224.396"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight9"
+        position="-103.565 20 -224.396"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight10"
+        position="-418.804 20 -92.373"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight11"
+        position="-412.315 20 346.772"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight12"
+        position="-198.188 20 402.908"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight13"
+        position="-199.968 20 241.081"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight14"
+        position="-318.853 20 -56.990"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight15"
+        position="-318.853 20 249.493"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight16"
+        position="-199.787 20 0.829"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight17"
+        position="166.131 20 286.500"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.75"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight18"
+        position="360.327 20 286.500"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.75"
+      ></a-entity>
+      <a-entity
+        gltf-model="#trafficlight"
+        id="trafficlight19"
+        position="-198.188 20 568.554"
+        scale="0.010 0.010 0.010"
+        animation-mixer="timeScale:0.75"
+      ></a-entity>
+
+      
+      
+      <!-- Cars -->
+      <a-entity
+        gltf-model="#car1"
+        id="car0"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car2"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car3"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car4"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car5"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car6"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car7"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car8"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car9"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="car10"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      <a-entity
+        gltf-model="#car1"
+        id="carone"
+        position="0 7.251 0"
+        scale="10 10 10"
+        rotation="0 -136 0"
+      ></a-entity>
+      
+      
+      
+      
+      <a-entity
+        gltf-model="#city"
+        id="city1"
+        position="0 4.6 0"
+        scale="2 2 2"
+      ></a-entity>
+      <a-entity
+        gltf-model="#city2"
+        id="cityy"
+        rotation="-0.060 0.000 0.000"
+        position="100.010 0.000 1700.000"
+        scale=" 0.050 0.050 0.050"
+      ></a-entity>
+      <a-entity
+        gltf-model="#robinhood"
+        id="robin"
+        position="944.047 -0.297 0.000"
+        scale="0.200 0.200 0.200"
+      ></a-entity>
+
+      <a-entity
+        light="type: ambient; color: white; intensity: 0.6"
+        position="0 5000 0"
+      ></a-entity>
+
+      <a-entity
+        camera
+        id="camera"
+        active="true"
+        rotation="-54.5 8.365 0"
+        position="14 50 50"
+      ></a-entity>
+      <a-entity
+        camera
+        id="camera2"
+        active="false"
+        rotation="-54.5 8.365 0"
+        position="14 50 50"
+      ></a-entity>
+    </a-scene>
+
+    <script>
+      
+      
+      
+      
+      
+      
+      
+      
+      let serviceUUID = "e18d5ddb-edb7-46d6-b3dc-f3068dc6aa66";
+      let characteristicUUID = "dd4c2ee5-fdf4-40f5-8a3c-90ab7d0e8831";
+      
+      let serviceUUID2 = "3e1feeec-b4dc-495b-b117-b71d7a0fbe1b";
+      let characteristicUUID2 = "9116561c-c7cd-4002-9376-f5c0661761b0";
+
+      
+      let device;
+      let service;
+      let characteristic;
+      
+      let device2;
+      let service2;
+      let characteristic2;
+      
+      let car = document.getElementById("car");
+      let camera = document.getElementById("camera");
+      let camera2 = document.getElementById("camera2");
+      let velocity = 0;
+      let acceleration = 0;
+      
+      
+      
+     car.object3D.rotation.y = -0.8599999999;
+      
+      let active = 0;
+      
+      //function connect(event) {
+      window.addEventListener("keypress", k => {
+        if (k.key == "f") {
+          
+          navigator.bluetooth
+            .requestDevice({
+              filters: [{ services: [serviceUUID2] }]
+            })
+            .then(_device2 => {
+              device2 = _device2;
+
+              console.log("got device " + device2);
+              return device2.gatt.connect();
+            })
+            .then(() => {
+              console.log("Device Connected");
+              return device2.gatt.getPrimaryService(serviceUUID2);
+            })
+            .then(_service2 => {
+              service2 = _service2;
+              return service2.getCharacteristic(characteristicUUID2);
+            })
+            .then(_characteristic2 => {
+              characteristic2 = _characteristic2;
+              characteristic2.addEventListener(
+                "characteristicvaluechanged",
+                data2
+              );
+              return characteristic2.startNotifications();
+            });
+          
+          
+        } else if (k.key == "c") {
+          if (active == 0) {
+            document.getElementById("camera").setAttribute("camera", "active", true);
+            document.getElementById("camera2").setAttribute("camera", "active", false);
+            active = 1;
+          } else if (active == 1) {
+            document.getElementById("camera").setAttribute("camera", "active", false);
+            document.getElementById("camera2").setAttribute("camera", "active", true);
+            active = 0;
+          }
+        }
+      });
+      
+      let xAccel;
+      let yAccel;
+      let zAccel;
+      
+      let readyToDrive = false;
+      let takes = 0;
+      let xAccelArray = [];
+      
+      function data2() {
+        xAccel = characteristic2.value.getFloat32(0, true);
+        yAccel = characteristic2.value.getFloat32(4, true);
+        zAccel = characteristic2.value.getFloat32(8, true);
+        
+        
+        
+        
+        document.getElementById("car").object3D.rotation.y += (-1 * (characteristic2.value.getFloat32(0, true) * -1)) / 90;
+
+        if (Math.abs(yAccel) > 0.1) {
+          velocity -= characteristic2.value.getFloat32(4, true) / 1000;
+        }
+
+        let rotationEuler = new THREE.Euler(
+          document.getElementById("car").object3D.rotation.x,
+          document.getElementById("car").object3D.rotation.y - 0.859999999,
+          document.getElementById("car").object3D.rotation.z
+        );
+        let rotationEuler2 = new THREE.Euler(
+          document.getElementById("camera").object3D.rotation.x,
+          document.getElementById("camera").object3D.rotation.y,
+          document.getElementById("camera").object3D.rotation.z
+        );
+        let rotationEuler3 = new THREE.Euler(
+          document.getElementById("camera2").object3D.rotation.x,
+          document.getElementById("camera2").object3D.rotation.y,
+          document.getElementById("camera2").object3D.rotation.z
+        );
+
+        const offsetVector = new THREE.Vector3(0, 0, -velocity).applyEuler(
+          rotationEuler
+        );
+
+        offsetVector.y = 0;
+        //camera.object3D.position.add(offsetVector);
+        document.getElementById("car").object3D.position.add(offsetVector);
+        const offsetVector2 = new THREE.Vector3(
+          -1.84,
+          -0.2,
+          -2.4
+        ).applyEuler(rotationEuler2);
+
+        const offsetVector3 = new THREE.Vector3(-1.84, 30, 70).applyEuler(
+          rotationEuler3
+        );
+
+        //if (readyToDrive == true) {
+        document.getElementById("camera").object3D.position.x = document.getElementById("car").object3D.position.x;
+        document.getElementById("camera").object3D.position.y = document.getElementById("car").object3D.position.y + 0.6;
+        document.getElementById("camera").object3D.position.z = document.getElementById("car").object3D.position.z;
+        //camera.object3D.rotation.copy(car.object3D.rotation);
+        document.getElementById("camera").object3D.rotation.x = document.getElementById("car").object3D.rotation.x;
+        document.getElementById("camera").object3D.rotation.y = document.getElementById("car").object3D.rotation.y + 2;
+        document.getElementById("camera").object3D.rotation.z = document.getElementById("car").object3D.rotation.z;
+        document.getElementById("camera").object3D.position.add(offsetVector2);
+        document.getElementById("camera").object3D.rotation.y += 0.5;
+
+        document.getElementById("camera2").object3D.position.copy(document.getElementById("camera").object3D.position);
+        document.getElementById("camera2").object3D.position.add(offsetVector3);
+        
+        //console.log(zAccel - 1);
+      }
+
+      function data() {
+
+
+        //console.log(camera.object3D);
+
+        //console.log(characteristic.value.getFloat32(4, true));
+
+
+        //camera.object3D.rotation.y +=
+        //-1 * (characteristic.value.getFloat32(0, true) * -1) / 150;
+        
+        //}
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      class Model extends Croquet.Model {
+        
+        init() {
+          this.indexToViewId = new Map();
+          this.indexToPosition = new Map();
+          this.indexToRotation = new Map();
+          
+          for (let i = 0; i < 11; i++) {
+            this.indexToViewId.set(i, "no");
+          }
+
+          for (let i = 0; i < 11; i++) {
+            this.indexToRotation.set(i, "rotation");
+          }
+          
+          for (let i = 0; i < 11; i++) {
+            this.indexToPosition.set(i, "position");
+          }
+                    
+          // Working - 203 10:50 PM 07/29/21
+          // Working - 321 7:06 PM 07/31/21
+          // Working - 337 12:16 AM 08/01/21
+          this.test = 360;
+           
+          this.subscribe(this.sessionId, "view-join", this.viewJoin);
+          this.subscribe(this.sessionId, "view-exit", this.viewExit);
+          
+          this.subscribe("sendcardata", "send", this.processPositioningData);
+          
+          
+          this.needFix;
+          
+          this.future(1).updateUserPositions();
+          this.future(1).bugFixInterval();
+          
+        }
+        static types() {
+          return {
+            "THREE.Vector3": THREE.Vector3,
+            "THREE.Quaternion": THREE.Quaternion
+          }
+        }
+        
+
+        
+        updateUserPositions() {
+          //console.log(this.indexToPosition);
+          this.publish("update", "userpositions", {indexToPositionSet: this.indexToPosition, indexToRotationSet: this.indexToRotation});
+         
+          this.future(1).updateUserPositions();
+          
+          
+          
+          
+          // This is for the third person party issue where if 3 people join, the first two can see each other, but the third can see nothing and no one can see the third
+          
+          
+        }
+        
+        bugFixInterval() {
+          let lastIndex = 0;
+          for (let [key, value] of this.indexToViewId) {
+            if (value != "no") {
+              lastIndex++;
+            } else {
+              break;
+            }
+          }
+
+
+          this.publish("thirdPersonPartyIssue", "fix", {lastindex: lastIndex, indextoViewId: this.indexToViewId});     
+          this.future(1).bugFixInterval();
+        }
+        
+        processPositioningData(data) {
+          for (let [key, value] of this.indexToPosition) {
+            if (key == data.userIndex) {
+              this.indexToPosition.set(key, data.position);
+              break;
+            }
+          }
+          
+          for (let [key, value] of this.indexToRotation) {
+            if (key == data.userIndex) {
+              this.indexToRotation.set(key, data.rotation);
+              break;
+            }
+          }
+        }
+        
+        
+        viewJoin(viewId) {
+          this.needFix = true;
+          for (let [key, value] of this.indexToViewId) {
+            if (value == "no") {
+              this.indexToViewId.set(key, viewId);
+              this.indexToPosition.set(key, new THREE.Vector3(0, 0, 0));
+              this.indexToRotation.set(key, new THREE.Vector3(0, 0, 0));
+              //console.log(viewId + " is set to " + key);
+              
+              this.publish("userjoin", "join", {viewid: viewId, index: key, indexToViewid: this.indexToViewId});
+              
+              break;
+            }
+          }
+          
+          
+        }
+        
+        viewExit(viewId) {
+          this.needFix = true;
+          for (let [key, value] of this.indexToViewId) {
+            if (value == viewId) {
+              this.indexToViewId.set(key, "no");
+              break;
+            }
+          }
+          
+          
+        }
+        
+
+        
+        
+        
+        
+      }
+
+      Model.register("Model");
+
+      class View extends Croquet.View {
+        constructor(model) {
+          super(model);
+          this.model = model;
+          this.serviceUUID = "e18d5ddb-edb7-46d6-b3dc-f3068dc6aa66";
+          this.characteristicUUID = "dd4c2ee5-fdf4-40f5-8a3c-90ab7d0e8831";
+
+          this.serviceUUID2 = "3e1feeec-b4dc-495b-b117-b71d7a0fbe1b";
+          this.characteristicUUID2 = "9116561c-c7cd-4002-9376-f5c0661761b0";
+          
+
+          this.device;
+          this.service;
+          this.characteristic;
+
+          this.device2;
+          this.service2;
+          this.characteristic2;
+          
+          this.scene = document.querySelector('a-scene');
+
+          this.car = document.getElementById("car");
+          
+          this.car0 = document.getElementById("car0");
+          this.car1 = document.getElementById("carone");
+          this.car2 = document.getElementById("car2");
+          this.car3 = document.getElementById("car3");
+          this.car4 = document.getElementById("car4");
+          this.car5 = document.getElementById("car5");
+          this.car6 = document.getElementById("car6");
+          this.car7 = document.getElementById("car7");
+          this.car8 = document.getElementById("car8");
+          this.car9 = document.getElementById("car9");
+          this.car10 = document.getElementById("car10");
+          
+          this.camera = document.getElementById("camera");
+          this.camera2 = document.getElementById("camera2");
+
+          this.constant = document.getElementById("constant");
+          this.accelerationSFX = document.getElementById("accelerationsfx");
+          
+          
+          this.cars = [this.car0, this.car1, this.car2, this.car3, this.car4, this.car5, this.car6, this.car7, this.car8, this.car9, this.car10];
+         
+          this.subscribe("userjoin", "join", this.newUser);
+          this.subscribe("update", "userpositions", this.updateCarPositions);
+          
+
+          this.arduinoInHands = false;
+          this.arduinoOnFoot = false;
+          
+          this.car.object3D.rotation.y = -0.8599999999;
+          
+          for (let i = 0; i < this.arrayOfCars; i++) {
+            this.arrayOfCars[i].object3D.rotation.y = -0.8599999999;
+          }
+
+          this.active = 0;
+          
+          
+          this.index;
+
+          //function connect(event) {
+          
+
+          this.x = document.getElementById("x");
+          this.y = document.getElementById("y");
+          this.z = document.getElementById("z");
+
+          this.xCoordinate = 250;
+          this.yCoordinate = 250;
+
+          this.plane = document.getElementById("plane");
+
+          this.velocity = 0;
+          this.acceleration = 0;
+
+          this.finish = false;
+
+          this.offsetVectorXtoCar;
+
+          this.takes = 0;
+          this.calibrationFootPedal = [];
+
+          function mean(arr) {
+            let sigma = 0;
+            for (let i = 0; i < arr.length; i++) {
+              sigma += arr[i];
+            }
+            return sigma / arr.length;
+          }
+
+          this.averageFootAccelX;
+
+          document.addEventListener("keydown", k => {
+            if (k.key == "w") {
+              this.velocity -= 0.05;
+            } else if (k.key == "s") {
+              this.velocity += 0.05;
+            } else if (k.key == "a") {
+              this.car.object3D.rotation.y += 0.1;
+            } else if (k.key == "d") {
+              this.car.object3D.rotation.y -= 0.1;
+            }
+          });
+          
+          
+          window.setInterval(() => {
+            if (
+              (this.arduinoOnFoot == true && this.arduinoInHands == false) ||
+              (this.arduinoOnFoot == false && this.arduinoInHands == true) ||
+              (this.arduinoOnFoot == false && this.arduinoInHands == false)
+            ) {
+              let rotationEuler = new THREE.Euler(
+                this.car.object3D.rotation.x,
+                this.car.object3D.rotation.y - 0.859999999,
+                this.car.object3D.rotation.z
+              );
+              let rotationEuler2 = new THREE.Euler(
+                this.camera.object3D.rotation.x,
+                this.camera.object3D.rotation.y,
+                this.camera.object3D.rotation.z
+              );
+              let rotationEuler3 = new THREE.Euler(
+                this.camera2.object3D.rotation.x,
+                this.camera2.object3D.rotation.y,
+                this.camera2.object3D.rotation.z
+              );
+
+              const offsetVector = new THREE.Vector3(
+                0,
+                0,
+                -this.velocity
+              ).applyEuler(rotationEuler);
+
+              offsetVector.y = 0;
+              //camera.object3D.position.add(offsetVector);
+              this.car.object3D.position.add(offsetVector);
+              const offsetVector2 = new THREE.Vector3(
+                -1.84,
+                -0.2,
+                -2.4
+              ).applyEuler(rotationEuler2);
+
+              const offsetVector3 = new THREE.Vector3(-1.84, 30, 70).applyEuler(
+                rotationEuler3
+              );
+
+              //camera.object3D.position.copy(car.object3D.position);
+              this.camera.object3D.position.x = this.car.object3D.position.x;
+              this.camera.object3D.position.y = this.car.object3D.position.y + 0.6;
+              this.camera.object3D.position.z = this.car.object3D.position.z;
+              //camera.object3D.rotation.copy(car.object3D.rotation);
+              this.camera.object3D.rotation.x = this.car.object3D.rotation.x;
+              this.camera.object3D.rotation.y = this.car.object3D.rotation.y + 2;
+              this.camera.object3D.rotation.z = this.car.object3D.rotation.z;
+              this.camera.object3D.position.add(offsetVector2);
+              this.camera.object3D.rotation.y += 0.5;
+
+              this.camera2.object3D.position.copy(this.camera.object3D.position);
+              this.camera2.object3D.position.add(offsetVector3);
+            }
+            
+          });
+
+          
+          this.subscribe("thirdPersonPartyIssue", "fix", this.sendCarDataFix);
+
+          
+          
+          
+          
+        }
+        
+        sendCarDataFix(data) {
+          //console.log(data.indextoViewId);
+          for (let [key, value] of data.indextoViewId) {
+            if ((value == this.viewId) && (isNaN(this.index))) {
+              this.index = key;
+              this.sendCarData();
+              break;
+            }
+          }
+        }
+        
+        updateCarPositions(data) {
+          /*for (let [key, value] of data.indexToPositionSet) {
+            if (key != this.index) {
+              this.cars[key].object3D.position.set(value);
+            }
+          }
+          
+          for (let [key, value] of data.indexToRotationSet) {
+            if (key != this.index) {
+              this.cars[key].object3D.rotation.set(value);
+            }
+          }*/
+          for (let [key, value] of data.indexToPositionSet) {
+            if (key != this.index) {
+              if (value != "position") {
+                if ((isNaN(value.x) == false) && (isNaN(value.y) == false) && (isNaN(value.z) == false)) {
+                  //console.log(value.x, value.y, value.z)
+                  this.cars[key].object3D.position.x = value.x;
+                  this.cars[key].object3D.position.y = value.y;
+                  this.cars[key].object3D.position.z = value.z;
+                }
+              }
+            }
+          }
+          
+          for (let [key, value] of data.indexToRotationSet) {
+            if (key != this.index) {
+              if (value != "rotation") {
+                if ((isNaN(value.x) == false) && (isNaN(value.y) == false) && (isNaN(value.z) == false)) {
+                  this.cars[key].object3D.rotation.x = value.x;
+                  this.cars[key].object3D.rotation.y = value.y;
+                  this.cars[key].object3D.rotation.z = value.z;
+                }
+              }
+            }
+          }          
+        }
+        
+        newUser(data) {
+          for (let [key, value] of data.indexToViewid) {
+            if (value == this.viewId) {
+              this.index = key;
+              break;
+            }
+          }
+          
+          
+          this.sendCarData();
+          
+          /*if (this.viewId == data.viewid) {
+            this.index = data.index;
+            console.log("A am the new user!");
+            //console.log(this.index);
+            
+            */
+            
+            //console.log("I am car " + this.index);
+        }
+        
+        sendCarData() {
+          window.setInterval(() => { 
+            //console.log(this.index);
+            this.publish("sendcardata", "send", {position: new THREE.Vector3(this.car.object3D.position.x, this.car.object3D.position.y, this.car.object3D.position.z), rotation: new THREE.Vector3(this.car.object3D.rotation.x, this.car.object3D.rotation.y, this.car.object3D.rotation.z), userIndex: this.index, userid: this.viewId});
+          }, 1)
+        }
+      }
+
+      Croquet.Session.join({
+        appId: "io.code.croquet.hello",
+        name: "unnamed",
+        password: "secret",
+        model: Model,
+        view: View
+      });
+    </script>
+  </body>
+</html>
